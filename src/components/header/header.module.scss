@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
+
+.header {
+  margin-top: 26px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+
+    a {
+      font-family: "Inter", sans-serif;
+      color: #666666;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .wrapper {
+    justify-content: space-between;
+  }
+}

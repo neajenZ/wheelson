@@ -1,0 +1,162 @@
+
+
+.leftContent {
+  grid-gap: 16px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  h2 {
+    font-weight: 700;
+    font-family: Inter;
+    font-size: 60px;
+    line-height: 72px;
+    max-width: 648px;
+    width: 100%;
+    letter-spacing: -1px;
+    color: #111827;
+  }
+
+  p {
+    max-width: 648px;
+    width: 100%;
+    color: #374151;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.relativeContainer {
+  position: relative;
+
+  .rightLines {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .lineCont {
+      position: relative;
+      top: -100px;
+      .green {
+        position: absolute;
+        right: 0;
+        bottom: 73px;
+      }
+
+      .purple {
+        position: absolute;
+        bottom: 83px;
+        right: 0;
+      }
+    }
+
+  }
+
+  .leftLines {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .lineCont {
+      position: relative;
+      top: 40px;
+
+      .green {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .purple {
+        bottom: 83px;
+        position: absolute;
+        left: 0;
+
+      }
+    }
+  }
+}
+
+.body {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%,0);
+    z-index: -2;
+    background: url("src/shared/images/BG.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.wrapper {
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.watchVideo {
+  background: url("src/shared/images/btn.svg") left no-repeat;
+  padding-left: 28px;
+  color: #7C3AED;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  grid-gap: 28px;
+}
+
+.getStarted {
+  border-radius: 8px;
+  background: #7C3AED;
+  color: #fff;
+  padding: 16px 24px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 430px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+  .actions {
+    flex-direction: column;
+
+    .watchVideo {
+    }
+  }
+  .leftContent {
+    h2 {
+      font-size: 48px;
+      line-height: 58px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .rightLines {
+    display: none !important;
+  }
+  .mobileBody {
+    display: none;
+  }
+}

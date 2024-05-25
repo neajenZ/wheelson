@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "GteDisplayBold";
+  src: url('../../shared/font/gteestiprodisplay_regular.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayExtra";
+  src: url('../../shared/font/gteestiprodisplay_bold.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayLight";
+  font-style: normal;
+  src: url('../../shared/font/gteestiprodisplay_light.otf') format("truetype");
+  font-weight: normal;
+}
+
+
+.success-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #8a2be2, #adff2f);
+  color: white;
+  font-family: Arial, sans-serif;
+
+  .green-button {
+    width: 50%;
+  }
+}
+
+.purchase {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: GteDisplayLight;
+}
+
+.success-icon {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark {
+  font-size: 50px;
+  color: #fff;
+}
+
+.success-text {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: GteDisplayBold;
+}
+
+.subtitle {
+  margin: 20px 0;
+  font-size: 18px;
+  font-family: GteDisplayBold;
+}
+
+.done-button {
+  padding: 10px 40px;
+  background-color: #adff2f;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: GteDisplayBold;
+  
+}
+
+.done-button:hover {
+  background-color: #9eff2f;
+}

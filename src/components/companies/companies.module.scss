@@ -1,0 +1,20 @@
+
+.body {
+  margin-top: 100px;
+}
+
+.wrapper {
+  padding: 32px 0;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 64px;
+
+  span {
+    background: gray;
+    width: 65px;
+    height: 10px;
+  }
+}
