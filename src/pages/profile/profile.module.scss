@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "GteDisplayBold";
+  src: url('../../shared/font/gteestiprodisplay_regular.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayExtra";
+  src: url('../../shared/font/gteestiprodisplay_bold.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayLight";
+  font-style: normal;
+  src: url('../../shared/font/gteestiprodisplay_light.otf') format("truetype");
+  font-weight: normal;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  h4 {
+    font-family: GteDisplayExtra;
+    font-size: 28px;
+    color: #000000;
+  }
+}
+
+.profile {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+  
+  .nameWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-gap: 4px;
+    margin-left: 12px;
+
+    h4 {
+      font-family: GteDisplayBold;
+      font-size: 18px;
+      color: #000;
+    }
+
+    span {
+      color: #C2C2C2;
+      font-size: 16px;
+      font-family: GteDisplayLight;
+    }
+  }
+}
+
+.slider {
+  margin-top: 25px;
+
+  h4 {
+    font-family: GteDisplayBold;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    max-width: 104px;
+    width: 100%;
+    background: #FAFAFA;
+    height: 122px;
+    border-radius: 10px;
+    padding: 10px;
+    &.choosen {
+      background: #9E4BFF !important;
+
+      p {
+        color: #fff;
+      }
+    }
+
+    .head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    p {
+      max-width: 85px;
+      width: 100%;
+      font-family: GteDisplayBold;
+      white-space: wrap;
+      word-wrap: break-word;
+      color: #000000;
+    }
+  }
+}
+
+.history {
+  background: #FAFAFA;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    grid-gap: 12px;
+
+    h4 {
+      font-family: GteDisplayBold;
+      font-size: 16px;
+      color: #000;
+    }
+  }
+}

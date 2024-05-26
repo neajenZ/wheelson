@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+  font-family: "GteDisplayBold";
+  src: url('./shared/font/gteestiprodisplay_regular.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayExtra";
+  src: url('./shared/font/gteestiprodisplay_bold.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayLight";
+  font-style: normal;
+  src: url('./shared/font/gteestiprodisplay_light.otf') format("truetype");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.mobile-container {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mobile-header {
+  position: relative;
+  margin: 50px 0;
+  h4 {
+    font-size: 28px;
+    color: #000;
+    font-family: GteDisplayExtra;
+    text-align: center;
+  }
+  a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.main-input {
+  width: 100%;
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-family: GteDisplayLight;
+    font-size: 12px;
+    color: #C2C2C2;
+  }
+
+  input {
+    display: block;
+    font-family: GteDisplayBold;
+    padding: 27px 20px 13px 20px;
+    background: #FAFAFA;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    
+    &::placeholder {
+      color: #C2C2C2;
+    }
+  }
+}
+
+.green-button {
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  color: #000;
+  background: #C7FF24;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: GteDisplayBold;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding: 0 10px;
+  }
+}

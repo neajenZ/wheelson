@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "GteDisplayBold";
+  src: url('../../shared/font/gteestiprodisplay_regular.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayExtra";
+  src: url('../../shared/font/gteestiprodisplay_bold.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayLight";
+  font-style: normal;
+  src: url('../../shared/font/gteestiprodisplay_light.otf') format("truetype");
+  font-weight: normal;
+}
+
+.body {
+  margin-top: 25px;
+
+  h4 {
+    font-family: GteDisplayBold;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-gap: 10px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      grid-gap: 16px;
+      justify-content: flex-start;
+      padding: 16px 20px;
+      width: 100%;
+      border-radius: 20px;
+      background: #FAFAFA;
+      .wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        grid-gap: 4px;
+        font-family: GteDisplayLight;
+        span {
+          font-size: 14px;
+          color: #c2c2c2;
+        }
+
+        h4 {
+          font-size: 15px;
+          color: #000;
+        }
+      }
+    }
+  }
+}

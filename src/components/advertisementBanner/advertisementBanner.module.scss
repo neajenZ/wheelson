@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "GteDisplayExtra";
+  src: url('../../shared/font/gteestiprodisplay_bold.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GteDisplayLight";
+  src: url('../../shared/font/gteestiprodisplay_light.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GteDisplayRegular";
+  src: url('../../shared/font/gteestiprodisplay_regular.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.picture {
+  width: 100vw;
+}
+
+.body {
+  position: relative;
+
+  .closeBtn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+}
+
+.header {
+  margin-top: 14px;
+
+  h3 {
+    font-size: 28px;
+    font-family: GteDisplayExtra;
+    color: #000;
+
+    span {
+      color: #9E4BFF;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    font-family: GteDisplayExtra;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.info {
+  text-align: center;
+  margin-top: 15px;
+
+  p {
+    font-family: GteDisplayExtra;
+    font-size: 16px;
+    line-height: 20px;
+
+    span {
+      color: #9E4BFF;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  width: 100%;
+  margin-top: 25px;
+
+  div {
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    color: #000;
+    border: 2px solid #C7FF24;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: GteDisplayBold;
+    border-radius: 30px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  margin-top: 30px;
+  .item {
+    p {
+      font-family: GteDisplayRegular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #000;
+      padding-left: 30px;
+      background: url("../../shared/images/accept.png") top left no-repeat;
+
+    }
+
+    &:nth-child(3) {
+      p {
+        line-height: 21px;
+      }
+    }
+  }
+}
