@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wheelson/static/css/main.2c5eb1be.css",
-    "main.js": "/wheelson/static/js/main.331a4a00.js",
+    "main.js": "/wheelson/static/js/main.103d4596.js",
     "static/media/roadMap_bg.png": "/wheelson/static/media/roadMap_bg.cc997e071197bd51ebb9.png",
     "static/media/Mobile.png": "/wheelson/static/media/Mobile.406f1d4f16a8d98f9a00.png",
     "static/media/Phones.png": "/wheelson/static/media/Phones.2982cc5391362e0e0733.png",
@@ -30,10 +30,10 @@
     "index.html": "/wheelson/index.html",
     "static/media/green_left.svg": "/wheelson/static/media/green_left.5be75ce98563e5e92f2bf6f6c96f54f9.svg",
     "main.2c5eb1be.css.map": "/wheelson/static/css/main.2c5eb1be.css.map",
-    "main.331a4a00.js.map": "/wheelson/static/js/main.331a4a00.js.map"
+    "main.103d4596.js.map": "/wheelson/static/js/main.103d4596.js.map"
   },
   "entrypoints": [
     "static/css/main.2c5eb1be.css",
-    "static/js/main.331a4a00.js"
+    "static/js/main.103d4596.js"
   ]
 }
