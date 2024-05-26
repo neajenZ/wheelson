@@ -7,9 +7,31 @@ import { useEffect, useState } from 'react';
 import { apiRequests } from '../../shared/api/apiRequests.js';
 import { AdvertisementBanner } from '../../components/advertisementBanner/advertisementBanner.jsx';
 import Cookies from 'js-cookie';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'
+import SliderCard from './sliderCard.jsx';
+
 
 export const Profile = () => {
     const {user, isAuth} = useSelector(state => state.mainSlice)
+    const [cards, setCards] = useState([
+        {
+            name: 'Роликовые коньки',
+            url: '/src/shared/images/skate.png'
+        },
+        {
+            name: 'Скейтборд',
+            url: '/src/shared/images/skate.svg'
+        },
+        {
+            name: 'Велосипед',
+            url: '/src/shared/images/bike.svg'
+        },
+        {
+            name: 'Электро\nсамокат',
+            url: '/src/shared/images/bike.svg'
+        },
+    ])
     const [advertisement, setAdvertisement] = useState(false)
     const navigate = useNavigate()
     const [picture, setPicture] = useState('/src/shared/images/profile.png')
@@ -53,7 +75,20 @@ export const Profile = () => {
                 <AdvertisementWidjet changeAd={() => setAdvertisement(true)} />
 
                 <div className={styles.slider}>
-                    <h4>Направление спорта</h4>
+                    <Swiper
+                        spaceBetween={12}    
+                        slidesPerView={3}
+                        slideClass={styles.slideCard}
+                    >
+                        {
+                            cards.map(i => (
+                                <SwiperSlide key={i.url}>
+                                    <SliderCard item={i} />
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+                    {/* <h4>Направление спорта</h4>
                     <div className={styles.sliderWrapper}>
                         <div className={styles.card}>
                             <div className={styles.head}>
@@ -67,16 +102,16 @@ export const Profile = () => {
                                 <img src="src/shared/images/skate.png" alt=""/>
                                 <img src="src/shared/images/choosen.svg" alt=""/>
                             </div>
-                            <p>Роликовые коньки</p>
+                            <p>Скейтборд</p>
                         </div>
                         <div className={styles.card}>
                             <div className={styles.head}>
                                 <img src="src/shared/images/skate.png" alt=""/>
                                 <img src="src/shared/images/choosen.svg" alt=""/>
                             </div>
-                            <p>Роликовые коньки</p>
+                            <p>Велосипед</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={styles.history}>

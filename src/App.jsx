@@ -16,7 +16,6 @@ import {EditPassword} from "./pages/editPassword/editPassword.jsx";
 import SuccessPaymentPage from './pages/successPayment/successPayment.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

@@ -78,9 +78,17 @@
   .card {
     max-width: 104px;
     width: 100%;
-    background: #9E4BFF;
+    background: #FAFAFA;
+    height: 122px;
     border-radius: 10px;
     padding: 10px;
+    &.choosen {
+      background: #9E4BFF !important;
+
+      p {
+        color: #fff;
+      }
+    }
 
     .head {
       display: flex;
@@ -90,8 +98,12 @@
     }
 
     p {
+      max-width: 85px;
+      width: 100%;
       font-family: GteDisplayBold;
-      color: #fff;
+      white-space: wrap;
+      word-wrap: break-word;
+      color: #000000;
     }
   }
 }

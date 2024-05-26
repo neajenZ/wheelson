@@ -8,11 +8,11 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <HashRouter>
+    <HashRouter>
+      <Provider store={store}>
           <App />
-      </HashRouter>
-    </Provider>
+      </Provider>
+    </HashRouter>
       
   </React.StrictMode>,
 )
