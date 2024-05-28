@@ -13,7 +13,7 @@ const SliderCard = ({item}) => {
             className={`${styles.card} ${isChoosen === true ? styles.choosen : ''}`}
         >
             <div className={styles.head}>
-                <img src={item.url} alt=""/>
+                <img src={`${isChoosen ? item.pictureChecked : item.picture}`} alt=""/>
                 {
                     isChoosen && <img src={icoChoosen} alt=""/>
                 }

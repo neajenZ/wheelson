@@ -142,6 +142,235 @@
   }
 }
 
+@media (max-width: 1075px) {
+  .line {
+    .point {
+
+      &:nth-child(4) {
+        transform: translate(700px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(850px, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .line {
+    .pointItem {
+      h4 {
+        font-size: 22px !important;
+      }
+      p {
+        font-size: 15px !important;
+      }
+    }
+
+    .point {
+
+      &:nth-child(4) {
+        transform: translate(650px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(800px, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .line {
+    .pointItem {
+      h4 {
+        font-size: 22px !important;
+      }
+      p {
+        font-size: 15px !important;
+      }
+    }
+
+    .point {
+      &:nth-child(2) {
+        transform: translate(250px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(3) {
+        transform: translate(420px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(630px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(750px, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .line {
+    .point {
+      &:nth-child(2) {
+        transform: translate(150px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(3) {
+        transform: translate(350px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(530px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(680px, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .line {
+    .pointItem {
+
+      h4 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .point {
+      width: 15px;
+      height: 22px;
+      &:nth-child(2) {
+        transform: translate(100px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(3) {
+        transform: translate(300px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(500px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(630px, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .line {
+    .pointItem {
+
+      h4 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .point {
+      &:nth-child(3) {
+        transform: translate(275px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(450px, -50%);
+        .pointItem {
+          top: 55px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(550px, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .line {
+    height: 4px;
+    .pointItem {
+      h4 {
+        font-size: 18px !important;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
+    .point {
+      width: 10px;
+      height: 15px;
+      &:nth-child(2) {
+        .pointItem {
+          top: 30px;
+        }
+      }
+      &:nth-child(3) {
+        transform: translate(250px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(400px, -50%);
+        .pointItem {
+          top: 30px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(500px, -50%);
+      }
+    }
+  }
+}
+@media (max-width: 635px) {
+  .line {
+    height: 4px;
+    .pointItem {
+      h4 {
+        font-size: 18px !important;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
+    .point {
+      &:nth-child(3) {
+        transform: translate(250px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(350px, -50%);
+        .pointItem {
+          top: 30px;
+        }
+      }
+      &:nth-child(5) {
+        transform: translate(450px, -50%);
+      }
+    }
+  }
+}
+
+
 @media (max-width: 430px) {
   .body {
     padding-bottom: 50px;
@@ -150,7 +379,7 @@
     margin-top: 50px;
   }
   .line {
-    width: 8px;
+    width: 4px;
     height: 75vh;
 
     .point {

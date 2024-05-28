@@ -41,6 +41,12 @@ export const apiRequests = {
         },
         activatePremium: async () => {
             return axiosInstance.patch(`/user/premium-activation`)
+        },
+        trips: async () => {
+            return axiosInstance.get(`/trips/get-trips?categories=roller_skates&categories=skateboard&categories=bike&categories=electric_scooters&categories=scooters&categories=unicycle`, {
+                limit: 100,
+
+            })
         }
     }
 }

@@ -1,7 +1,7 @@
 import styles from './userRecords.module.scss'
-import dur from '../../shared/images/duration.svg'
-import distance from '../../shared/images/distance.svg'
-import speed from '../../shared/images/speed.svg'
+import dur from '../../shared/images/duration.png'
+import distance from '../../shared/images/km.png'
+import speed from '../../shared/images/speed_limit.png'
 
 
 

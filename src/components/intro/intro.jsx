@@ -16,6 +16,7 @@ export const Intro = () => {
                     </div>
 
                 </div>
+
                 <div className={styles.rightLines}>
                     <div className={styles.lineCont}>
                         <img className={styles.purple} src={prLine} alt=""/>

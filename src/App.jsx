@@ -13,6 +13,7 @@ import {Profile} from "./pages/profile/profile.jsx";
 import {EditProfile} from "./pages/editProfile/editProfile.jsx";
 import {EditPassword} from "./pages/editPassword/editPassword.jsx";
 import SuccessPaymentPage from './pages/successPayment/successPayment.jsx';
+import {HistoryOfTrip} from "./pages/historyOfTrip/historyOfTrip";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
             <Route path={'/auth'} element={<LoginPage />} />
             <Route path={'/profile'} element={<Profile />} />
             <Route path={'/profile/edit'} element={<EditProfile />} />
+            <Route path={'/history_of_trip'} element={<HistoryOfTrip />}/>
             <Route path={'/payment/status'} element={<SuccessPaymentPage />} />
             <Route path={'/profile/edit_password'} element={<EditPassword />} />
         </Routes>

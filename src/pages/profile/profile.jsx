@@ -6,16 +6,24 @@ import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { apiRequests } from '../../shared/api/apiRequests.js';
 import { AdvertisementBanner } from '../../components/advertisementBanner/advertisementBanner.jsx';
-import Cookies from 'js-cookie';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import SliderCard from './sliderCard.jsx';
 import edit from '../../shared/images/Edit.svg';
-import settings from '../../shared/images/settings.svg';
 import nextHistory from '../../shared/images/next_history.svg';
-import history from '../../shared/images/History.svg';
+import history from '../../shared/images/hisotry.png';
 import img3 from '../../shared/images/bike.svg'
-import img1 from '../../shared/images/skate.png'
+import img3_white from '../../shared/images/bike_white.svg'
+
+import img1 from '../../shared/images/skate.svg'
+import img1_white from '../../shared/images/skate_white.svg'
+
+import img2 from '../../shared/images/kon_dark.svg'
+import img2_white from '../../shared/images/kon_white.svg'
+
+import img4 from '../../shared/images/samokat_black.svg'
+import img4_white from '../../shared/images/samokat_white.svg'
+
 import placeholder from '../../shared/images/profile.png'
 
 export const Profile = () => {
@@ -23,22 +31,26 @@ export const Profile = () => {
     const [cards, setCards] = useState([
         {
             name: 'Роликовые коньки',
-            url: img1,
+            picture: img2,
+            pictureChecked: img2_white,
             id: 1
         },
         {
             name: 'Скейтборд',
-            url: img3,
+            picture: img1,
+            pictureChecked: img1_white,
             id: 2
         },
         {
             name: 'Велосипед',
-            url: img3,
+            picture: img3,
+            pictureChecked: img3_white,
             id: 3
         },
         {
             name: 'Электро\nсамокат',
-            url: img3,
+            picture: img4,
+            pictureChecked: img4_white,
             id: 4
         },
     ])
@@ -67,7 +79,7 @@ export const Profile = () => {
                 <header className={styles.header}>
                     <h4>Личный кабинет</h4>
                     <Link to='/profile/edit_password'>
-                        <img src={settings} alt=""/>
+                        <img src={require('../../shared/images/settings.svg').default} alt=""/>
                     </Link>
                 </header>
                 <div className={styles.profile}>
@@ -106,7 +118,9 @@ export const Profile = () => {
                         <h4>История поездок</h4>
                     </div>
                     <button>
-                        <img src={nextHistory} alt=""/>
+                        <Link to={'/history_of_trip'}>
+                            <img src={nextHistory} alt=""/>
+                        </Link>
                     </button>
                 </div>
 

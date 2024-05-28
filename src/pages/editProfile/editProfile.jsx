@@ -53,6 +53,7 @@ export const EditProfile = () => {
         })
             .then((res) => {
                 dispatch(setUserData(res.data))
+                alert('Данные успешно измене')
             })
     };
 

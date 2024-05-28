@@ -179,6 +179,21 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .leftContent {
+    h2 {
+      font-size: 52px;
+      line-height: 65px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .mobileBody {
+    display: none;
+  }
+}
+
 @media (max-width: 430px) {
   .wrapper {
     margin-top: 80px;

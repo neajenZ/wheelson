@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "GteDisplayBold";
+  src: url('../../shared/font/gteestiprodisplay_regular.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayExtra";
+  src: url('../../shared/font/gteestiprodisplay_bold.otf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GteDisplayLight";
+  font-style: normal;
+  src: url('../../shared/font/gteestiprodisplay_light.otf') format("truetype");
+  font-weight: normal;
+}
+
+
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 7px;
+}
+.card {
+  h4 {
+    font-size: 18px;
+    font-family: GteDisplayBold;
+  }
+  .cardWrapper {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+    span {
+      font-family: GteDisplayLight;
+      font-size: 15px;
+    }
+  }
+}

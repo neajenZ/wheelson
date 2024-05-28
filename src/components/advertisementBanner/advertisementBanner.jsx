@@ -3,7 +3,7 @@ import { apiRequests } from '../../shared/api/apiRequests'
 import styles from './advertisementBanner.module.scss'
 import { setUserData } from '../../shared/store/main'
 import { useNavigate } from 'react-router-dom'
-import img from '../../shared/images/advertisement_picture.png'
+import img from '../../shared/images/ad_banner.jpg'
 import close from '../../shared/images/close.svg'
 
 export const AdvertisementBanner = ({setAdvertisement}) => {

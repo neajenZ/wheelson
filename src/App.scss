@@ -64,6 +64,7 @@ button {
   max-width: 1216px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .mobile-header {
@@ -127,7 +128,11 @@ button {
 }
 
 @media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
     padding: 0 10px;
   }
 }
+
