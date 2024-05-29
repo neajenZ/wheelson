@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wheelson/static/css/main.797cf91b.css",
-    "main.js": "/wheelson/static/js/main.1b020cbf.js",
+    "main.css": "/wheelson/static/css/main.7a61933b.css",
+    "main.js": "/wheelson/static/js/main.e3a140e5.js",
     "static/media/roadMap_bg.png": "/wheelson/static/media/roadMap_bg.cc997e071197bd51ebb9.png",
     "static/media/Mobile.png": "/wheelson/static/media/Mobile.406f1d4f16a8d98f9a00.png",
     "static/media/Phones.png": "/wheelson/static/media/Phones.2982cc5391362e0e0733.png",
@@ -24,6 +24,7 @@
     "static/media/skate.svg": "/wheelson/static/media/skate.3a9114d37a17a0cb45af3acd62c059a7.svg",
     "static/media/skate_white.svg": "/wheelson/static/media/skate_white.6dc3c86130d751a068944d1811eec216.svg",
     "static/media/placeholder_user.svg": "/wheelson/static/media/placeholder_user.be0d0e2cfdf8ece05bd97e8f75e307bc.svg",
+    "static/media/password.svg": "/wheelson/static/media/password.0e8746f2e5b7b15d1797ef0b000f8f53.svg",
     "static/media/Edit.svg": "/wheelson/static/media/Edit.fd86df13d8b2496e5af7decde501825d.svg",
     "static/media/previousStep.svg": "/wheelson/static/media/previousStep.6b87a79f7e278426f0e8a03b33f60977.svg",
     "static/media/choosen.svg": "/wheelson/static/media/choosen.45ed293b090ea116427491a0b7c9b2a6.svg",
@@ -33,11 +34,11 @@
     "static/media/btn.svg": "/wheelson/static/media/btn.897f1861e8c934f2e402.svg",
     "index.html": "/wheelson/index.html",
     "static/media/green_left.svg": "/wheelson/static/media/green_left.5be75ce98563e5e92f2bf6f6c96f54f9.svg",
-    "main.797cf91b.css.map": "/wheelson/static/css/main.797cf91b.css.map",
-    "main.1b020cbf.js.map": "/wheelson/static/js/main.1b020cbf.js.map"
+    "main.7a61933b.css.map": "/wheelson/static/css/main.7a61933b.css.map",
+    "main.e3a140e5.js.map": "/wheelson/static/js/main.e3a140e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.797cf91b.css",
-    "static/js/main.1b020cbf.js"
+    "static/css/main.7a61933b.css",
+    "static/js/main.e3a140e5.js"
   ]
 }
