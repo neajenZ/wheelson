@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wheelson/static/css/main.7a61933b.css",
-    "main.js": "/wheelson/static/js/main.e3a140e5.js",
+    "main.css": "/wheelson/static/css/main.7785b568.css",
+    "main.js": "/wheelson/static/js/main.db0cecab.js",
     "static/media/roadMap_bg.png": "/wheelson/static/media/roadMap_bg.cc997e071197bd51ebb9.png",
     "static/media/Mobile.png": "/wheelson/static/media/Mobile.406f1d4f16a8d98f9a00.png",
     "static/media/Phones.png": "/wheelson/static/media/Phones.2982cc5391362e0e0733.png",
@@ -9,7 +9,6 @@
     "static/media/gteestiprodisplay_bold.otf": "/wheelson/static/media/gteestiprodisplay_bold.81f533828cf207c8ba64.otf",
     "static/media/gteestiprodisplay_light.otf": "/wheelson/static/media/gteestiprodisplay_light.aae4ace524a0830db4e8.otf",
     "static/media/gteestiprodisplay_regular.otf": "/wheelson/static/media/gteestiprodisplay_regular.0d35b4da9453d20e65a5.otf",
-    "static/media/kz.svg": "/wheelson/static/media/kz.43bf5204d81a1d46fe86f69f362dbc47.svg",
     "static/media/ad_banner.jpg": "/wheelson/static/media/ad_banner.39fb9282f19e14c9ae15.jpg",
     "static/media/payment_error.svg": "/wheelson/static/media/payment_error.ad330b70d54f2b99e9d7f331279957e4.svg",
     "static/media/GooglePlayBtn.svg": "/wheelson/static/media/GooglePlayBtn.c5fb4afce5fe8ae64003b76047b9176d.svg",
@@ -34,11 +33,11 @@
     "static/media/btn.svg": "/wheelson/static/media/btn.897f1861e8c934f2e402.svg",
     "index.html": "/wheelson/index.html",
     "static/media/green_left.svg": "/wheelson/static/media/green_left.5be75ce98563e5e92f2bf6f6c96f54f9.svg",
-    "main.7a61933b.css.map": "/wheelson/static/css/main.7a61933b.css.map",
-    "main.e3a140e5.js.map": "/wheelson/static/js/main.e3a140e5.js.map"
+    "main.7785b568.css.map": "/wheelson/static/css/main.7785b568.css.map",
+    "main.db0cecab.js.map": "/wheelson/static/js/main.db0cecab.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a61933b.css",
-    "static/js/main.e3a140e5.js"
+    "static/css/main.7785b568.css",
+    "static/js/main.db0cecab.js"
   ]
 }
