@@ -10,7 +10,6 @@ export const EditProfile = () => {
     const {user, isAuth} = useSelector(state => state.mainSlice)
     const [preview, setPreview] = useState(placeholder)
     const [image, setImage] = useState()
-    const navigate = useNavigate()
     const dispatch = useDispatch()
     const [formData, setFormData] = useState({
         firstName: '',
