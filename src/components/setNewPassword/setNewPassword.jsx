@@ -5,12 +5,15 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import { setUserData } from '../../shared/store/main';
+import passVisible from '../../shared/images/password.svg'
 
 const NewPassword = () => {
     const [passwordValue, setPassword] = useState('')
     const dispatch = useDispatch()
     const {mainSlice} = useSelector(state => state)
     const navigate = useNavigate()
+    const [isVisiblePass, setVisible] = useState(false)
+    
     const handleSubmit = async () => {
         const body = {
             token: mainSlice.token,
@@ -39,9 +42,12 @@ const NewPassword = () => {
 
   return (
     <div className={styles.wrapper}>
-        <div className="main-input">
+        <div className="main-input password">
             <label htmlFor="">Новый пароль</label>
-            <input type="text" value={passwordValue} onChange={(e) => setPassword(e.target.value)} />
+            <input type={isVisiblePass ? 'text' : 'password'} value={passwordValue} onChange={(e) => setPassword(e.target.value)} />
+            <button onClick={() => setVisible(prev => !prev)}>
+                <img src={passVisible} alt=""/>
+            </button>
         </div>
         <button onClick={handleSubmit} className="green-button">Сохранить</button>
     </div>

@@ -1,11 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
-
+import placeholder_picture from '.././images/placeholder_user.png'
 
 const initialState = {
     token: '',
     number: '',
     isAuth: false,
-    user: {}
+    user: {},
+    userPicture: placeholder_picture
 }
 
 const mainSlice = createSlice({
@@ -23,10 +24,13 @@ const mainSlice = createSlice({
         setResetData (state, action) {
             state.number = action.payload.number,
             state.token = action.payload.token
+        },
+        setUserPicture (state, action) {
+            state.userPicture = action.payload
         }
     }
 })
 
-export const {setAuth, setResetData, setUserData} = mainSlice.actions
+export const {setAuth, setResetData, setUserData, setUserPicture} = mainSlice.actions
 
 export default mainSlice.reducer

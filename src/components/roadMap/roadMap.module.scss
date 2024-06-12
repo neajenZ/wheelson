@@ -68,7 +68,11 @@
         p {
           font-family: GteDisplayLight;
           color: #fff;
-          text-wrap: nowrap;
+          text-wrap: none;
+          white-space: nowrap;
+          overflow-wrap: normal;
+          word-wrap: normal;
+          hyphens: none;
           position: relative;
           padding-left: 12px;
           &::before {
@@ -377,6 +381,9 @@
   }
   .wrapperMain {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .line {
     width: 4px;
@@ -401,16 +408,24 @@
       }
       &:nth-child(2) {
         transform: translate(-50%, 18vh);
+        .pointItem {
+          left: -130px;
+        }
       }
       &:nth-child(3) {
         transform: translate(-50%, 35vh);
       }
       &:nth-child(4) {
         transform: translate(-50%, 53vh);
+        .pointItem {
+          left: -130px;
+        }
       }
       &:nth-child(5) {
         transform: translate(-50%, 73vh);
       }
+
+
     }
   }
 } 

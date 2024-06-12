@@ -88,6 +88,18 @@ button {
   width: 100%;
   position: relative;
 
+  &.password {
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 25px;
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   label {
     position: absolute;
     top: 12px;
@@ -112,6 +124,12 @@ button {
       color: #C2C2C2;
     }
   }
+}
+
+.password-input {
+  position: relative;
+
+
 }
 
 .green-button {

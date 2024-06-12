@@ -4,18 +4,16 @@ import {Link, useNavigate} from "react-router-dom";
 import { apiRequests } from '../../shared/api/apiRequests';
 import { useSelector } from 'react-redux';
 import step from "../../shared/images/previousStep.svg"
+import passwordIco from "../../shared/images/password.svg";
 export const EditPassword = () => {
     const navigate = useNavigate()
+    const [isVisiblePass, setVisible] = useState(false)
     const {isAuth} = useSelector(state => state.mainSlice)
     const [password, setPassword] = useState({
         old_password: '',
         new_password: '',
         repeat_password: ''
     })
-
-    useEffect(() => {
-        if (!isAuth) return navigate('/auth')
-    }, [])
 
     const handleSubmit = async () => {
         if (password.repeat_password !== password.new_password) {
@@ -40,29 +38,38 @@ export const EditPassword = () => {
             </header>
 
             <div className={styles.form}>
-                <div className="main-input">
+                <div className="main-input password">
+                    <button onClick={() => setVisible(prev => !prev)}>
+                        <img src={passwordIco} alt=""/>
+                    </button>
                     <input value={password.old_password} onChange={(e) => setPassword(
                         prev => ({
                             ...prev,
                             old_password: e.target.value
                         })
-                    )} type="text" placeholder={'Текущий пароль'}/>
+                    )} type={isVisiblePass ? 'text' : 'password'} placeholder={'Текущий пароль'}/>
                 </div>
-                <div className="main-input">
+                <div className="main-input password">
+                    <button onClick={() => setVisible(prev => !prev)}>
+                        <img src={passwordIco} alt=""/>
+                    </button>
                     <input value={password.new_password} onChange={(e) => setPassword(
                         prev => ({
                             ...prev,
                             new_password: e.target.value
                         })
-                    )} type="text" placeholder={'Новый пароль'}/>
+                    )} type={isVisiblePass ? 'text' : 'password'} placeholder={'Новый пароль'}/>
                 </div>
-                <div className="main-input">
+                <div className="main-input password">
+                    <button onClick={() => setVisible(prev => !prev)}>
+                        <img src={passwordIco} alt=""/>
+                    </button>
                     <input value={password.repeat_password} onChange={(e) => setPassword(
                         prev => ({
                             ...prev,
                             repeat_password: e.target.value
                         })
-                    )} type="text" placeholder={'Повторите пароль'} />
+                    )} type={isVisiblePass ? 'text' : 'password'} placeholder={'Повторите пароль'} />
                 </div>
             </div>
 

@@ -27,7 +27,7 @@ import img4_white from '../../shared/images/samokat_white.svg'
 import placeholder from '../../shared/images/profile.png'
 
 export const Profile = () => {
-    const {user, isAuth} = useSelector(state => state.mainSlice)
+    const {user, isAuth, userPicture} = useSelector(state => state.mainSlice)
     const [cards, setCards] = useState([
         {
             name: 'Роликовые коньки',
@@ -59,14 +59,7 @@ export const Profile = () => {
     const [picture, setPicture] = useState(placeholder)
     
     useEffect(() => {
-        if (!isAuth) return navigate('/auth')
-        const getData = async () => {
-            await apiRequests.user.getPicture(user.avatar_id)
-                .then((res) => {
-                    setPicture(URL.createObjectURL(res.data))
-                })
-        }
-        getData()
+
     }, [])
 
     if (advertisement) {
@@ -84,7 +77,7 @@ export const Profile = () => {
                 </header>
                 <div className={styles.profile}>
                     <div className={styles.left}>
-                        <img src={picture} alt="Avatar"/>
+                        <img src={userPicture} alt="Avatar"/>
                         <div className={styles.nameWrapper}>
                             <h4>{user.first_name} {user.last_name}</h4>
                             <span>{ user.is_premium === true ? 'Premium': 'Free' }</span>

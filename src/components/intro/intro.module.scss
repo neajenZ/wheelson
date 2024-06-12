@@ -199,7 +199,6 @@
     margin-top: 80px;
   }
   .actions {
-    flex-direction: column;
 
     .watchVideo {
     }
@@ -211,6 +210,11 @@
     }
     p {
       font-size: 16px;
+    }
+  }
+  .leftLines {
+    .lineCont {
+      top: 113px !important;
     }
   }
   .rightLines {

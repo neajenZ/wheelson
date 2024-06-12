@@ -3,7 +3,7 @@ import styles from './editProfile.module.scss'
 import {Link, useNavigate} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { apiRequests } from "../../shared/api/apiRequests";
-import { setUserData } from "../../shared/store/main";
+import { setUserData, setUserPicture } from "../../shared/store/main";
 import placeholder from '../../shared/images/placeholder_user.svg'
 import step from '../../shared/images/previousStep.svg'
 export const EditProfile = () => {
@@ -19,12 +19,12 @@ export const EditProfile = () => {
     });
 
     useEffect(() => {
-        if (!isAuth) return navigate('/auth')
         const getData = async () => {
             await apiRequests.user.getPicture(user.avatar_id)
                 .then((res) => {
                     setPreview(URL.createObjectURL(res.data))
                 })
+                .catch(e => console.log('fetch picture'))
         }
         getData()
     }, [])
@@ -36,9 +36,11 @@ export const EditProfile = () => {
             formData.append('document',e.currentTarget.files[0])
             await apiRequests.user.updatePicture(formData)
                 .then((res) => {
-                    setPreview(URL.createObjectURL(new Blob([file])))
+                    const newUserPicture = URL.createObjectURL(new Blob([file]))
+                    setPreview(newUserPicture)
                     setImage(file)
                     dispatch(setUserData({...user, avatar_id: res.data.file_id}))
+                    dispatch(setUserPicture(newUserPicture))
                     alert('Фото успешно изменено')
                 })
             
