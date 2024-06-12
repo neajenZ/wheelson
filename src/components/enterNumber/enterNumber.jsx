@@ -15,7 +15,6 @@ export const EnterNumber = () => {
 
     const handleRequest = async () => {
         const number = `${country.MobileCode.replace('+', '')}${numberValue}`
-        console.log(`${country.MobileCode.replace('+', '')}${numberValue}`)
         await apiRequests.user.requestCode(Number(number))
             .then((res) => {
                 if (res.data.status === 'success') {
