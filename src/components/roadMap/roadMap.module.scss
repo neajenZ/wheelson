@@ -98,10 +98,10 @@
       }
     }
     &:nth-child(3) {
-      transform: translate(420px, -50%);
+      transform: translate(620px, -50%);
     }
     &:nth-child(4) {
-      transform: translate(800px, -50%);
+      transform: translate(900px, -50%);
       .pointItem {
         top: 55px;
       }
@@ -146,10 +146,31 @@
   }
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 1450px) {
   .line {
     .point {
+      &:nth-child(2) {
+        transform: translate(200px, -50%);
+      }
+      &:nth-child(3) {
+        transform: translate(550px, -50%);
+      }
+      &:nth-child(4) {
+        transform: translate(750px, -50%);
+      }
+      &:nth-child(5) {
+        transform: translate(850px, -50%);
+      }
+    }
+  }
+}
 
+@media (max-width: 1205px) {
+  .line {
+    .point {
+      &:nth-child(2) {
+        transform: translate(100px, -50%);
+      }
       &:nth-child(4) {
         transform: translate(700px, -50%);
         .pointItem {
@@ -166,24 +187,28 @@
 @media (max-width: 1024px) {
   .line {
     .pointItem {
+      width: 300px;
       h4 {
         font-size: 22px !important;
       }
       p {
         font-size: 15px !important;
+        white-space: normal !important;
       }
     }
 
     .point {
-
+      &:nth-child(3) {
+        transform: translate(500px, -50%);
+      }
       &:nth-child(4) {
-        transform: translate(650px, -50%);
+        transform: translate(600px, -50%);
         .pointItem {
           top: 55px;
         }
       }
       &:nth-child(5) {
-        transform: translate(800px, -50%);
+        transform: translate(850px, -50%);
       }
     }
   }
@@ -379,6 +404,9 @@
   .body {
     padding-bottom: 50px;
   }
+  .pointItem {
+    width: 180px !important;
+  }
   .wrapperMain {
     margin-top: 50px;
     display: flex;
@@ -409,16 +437,17 @@
       &:nth-child(2) {
         transform: translate(-50%, 18vh);
         .pointItem {
-          left: -130px;
+          left: -180px;
         }
       }
       &:nth-child(3) {
         transform: translate(-50%, 35vh);
+        
       }
       &:nth-child(4) {
         transform: translate(-50%, 53vh);
         .pointItem {
-          left: -130px;
+          left: -180px;
         }
       }
       &:nth-child(5) {

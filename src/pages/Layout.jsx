@@ -53,4 +53,3 @@ const LayoutPage = (props) => {
 };
 
 export default LayoutPage;
-<Outlet />

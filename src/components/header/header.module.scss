@@ -7,7 +7,7 @@
 .wrapper {
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
   nav {
     display: flex;
     align-items: center;
@@ -22,8 +22,36 @@
   }
 }
 
+.left {
+  display: flex;
+  align-items: center;
+  grid-gap: 60px;
+}
+
+.telegram {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  color: #000;
+}
+
 @media (max-width: 430px) {
   .wrapper {
     justify-content: space-between;
+  }
+
+  .left img {
+    display: none;
+  }
+
+  .left nav {
+    grid-gap: 10px;
+  }
+  .telegram {
+    p {
+      display: none;
+    }
   }
 }

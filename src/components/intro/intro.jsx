@@ -4,8 +4,12 @@ import plLine from "../../shared/images/purple_left.png"
 import prLine from "../../shared/images/purple_right.png"
 import grLine from "../../shared/images/green_right.png"
 import phone from "../../shared/images/Mobile.png"
+import { useState } from 'react'
+import VideoPlayer from './videoPlayer/videoPlayer'
 
 export const Intro = () => {
+    const [isActive, setActive] = useState(false)
+
     return (
         <section className={styles.body}>
             <div className={styles.relativeContainer}>
@@ -27,13 +31,16 @@ export const Intro = () => {
                 <div className="container">
                     <div className={styles.wrapper}>
                         <aside className={styles.leftContent}>
-                            <h2>Все коллеги по хобби в твоем мобильном телефоне</h2>
-                            <p>tincidunt est vitae elit feugiat, in venenatis purus lacinia. Cras quis luctus augue. Donec mi turpis, rhoncus scelerisque velit feugiat, </p>
+                            <h2>Все виды уличного спорта в одном приложении</h2>
+                            <p>Регистрируйся, выбирай инвентарь, отслеживай прогресс. Находи других пользователей на карте. Покажи на что способен!</p>
                             <div className={styles.actions}>
                                 <button className={styles.getStarted}>
-                                    Get Started
+                                    Поехали
                                 </button>
-                                <button className={styles.watchVideo}>Watch Video</button>
+                                <button onClick={() => setActive(true)} className={styles.watchVideo}>Watch Video</button>
+                                {
+                                    isActive && <VideoPlayer setActive={setActive} />
+                                }
                             </div>
                         </aside>
 

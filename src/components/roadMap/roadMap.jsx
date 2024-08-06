@@ -17,11 +17,10 @@ export const RoadMap = () => {
                                 <div className={styles.pointItem}>
                                     <h4>1 квартал 2024</h4>
                                     <div className={styles.pointItemWrapper}>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
+                                        <p>Подготовка к разработки MVP версии приложения</p>
+                                        <p>Разработка основных функций <br/> и архитектуры приложения</p>
+                                        <p>Первые итерации разработки и тестирования</p>
+                                        <p>Продолжение разработки MVP</p>
                                     </div>
                                 </div>
                             </div>
@@ -31,11 +30,11 @@ export const RoadMap = () => {
                                 <div className={styles.pointItem}>
                                     <h4>2 квартал 2024</h4>
                                     <div className={styles.pointItemWrapper}>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
+                                        <p>Подготовка к выпуску первой тестовой сборки</p>
+                                        <p>Подготовка к внутреннему тестированию</p>
+                                        <p>Выпуск первой тестовой сборки MVP версии приложения</p>
+                                        <p>Сбор обратной связи от первых тестировщиков</p>
+                                        <p>Начало работы над привлечением первых пользователей</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,11 +44,11 @@ export const RoadMap = () => {
                                 <div className={styles.pointItem}>
                                     <h4>3 квартал 2024</h4>
                                     <div className={styles.pointItemWrapper}>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
+                                        <p>Активное развитие и вовлечение комьюнити </p>
+                                        <p>Официальный запуск MVP версии</p>
+                                        <p>Начало разработки M2E интеграции</p>
+                                        <p>Начало разработки Web3</p>
+                                        <p>Поддержка и развитие комьюнити</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,25 +58,11 @@ export const RoadMap = () => {
                                 <div className={styles.pointItem}>
                                     <h4>4 квартал 2024</h4>
                                     <div className={styles.pointItemWrapper}>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.point}>
-                            <div className={styles.pointWrapper}>
-                                <div className={styles.pointItem}>
-                                    <h4>2025</h4>
-                                    <div className={styles.pointItemWrapper}>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
-                                        <p>Fusce efficitur</p>
+                                        <p>Интеграция TON блокчейна</p>
+                                        <p>Подготовка к запуску зимней версии </p>
+                                        <p>Проведение масштабной рекламной кампании</p>
+                                        <p>Разработка и внедрение функции “спортивные клубы”</p>
+                                        <p>Анализ результатов года</p>
                                     </div>
                                 </div>
                             </div>

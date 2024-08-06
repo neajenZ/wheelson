@@ -10,19 +10,6 @@ export const Footer = () => {
                     <div className={styles.left}>
                         <img src="" alt=""/>
                         <div className={styles.links}>
-                            <div>
-                                <a href="#">Download Now</a>
-                                <a href="#">License</a>
-                            </div>
-
-                            <div className={styles.links}>
-                                <a href="#">About</a>
-                                <a href="#">Features</a>
-                                <a href="#">Pricing</a>
-                                <a href="#">News</a>
-                                <a href="#">Help</a>
-                                <a href="#">Contact</a>
-                            </div>
                         </div>
                         <p className={styles.copyright}>© 2024 Alfateam - be the best with us</p>
                     </div>

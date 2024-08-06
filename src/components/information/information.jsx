@@ -9,8 +9,8 @@ export const Information = () => {
             <div className="container">
                 <div className={styles.wrapper}>
                     <aside className={styles.left}>
-                        <h3>Находи новые знакомства с помощью своего мобильного телефона</h3>
-                        <p>Загрузите приложение, чтобы отслеживать других людей разделяющих твое хобби, пиши, знакомься, будь на связи !</p>
+                        <h3>Спорт объединяет, как и Wheels GO. Заводи новых друзей и приглашай своих</h3>
+                        <p>Регистрируйся, выбирай направление, находи единомышленников. Тренируйтесь вместе!</p>
                         <div>
                             <span>Get the app</span>
                             <div className={styles.actions}>

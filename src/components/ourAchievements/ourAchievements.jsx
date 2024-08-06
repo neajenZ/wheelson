@@ -6,7 +6,7 @@ export const OurAchievements = () => {
             <div className="container">
                 <div className={styles.wrapper}>
                     <aside className={styles.left}>
-                        <h3>Наши достижения с <br/> начало выпуска</h3>
+                        <h3>Наш прогресс <br/> с начала работы:</h3>
                         <p>С нашими сверхспособностями мы достигли этого</p>
                     </aside>
 
@@ -14,29 +14,15 @@ export const OurAchievements = () => {
                         <div className={styles.item}>
                             <img src="" alt=""/>
                             <div>
-                                <h4>10,000+</h4>
-                                <span>Загрузок в день</span>
+                                <h4>2000+</h4>
+                                <span>Пользователей в <br/> телеграм канале</span>
                             </div>
                         </div>
                         <div className={styles.item}>
                             <img src="" alt=""/>
                             <div>
-                                <h4>2 Million</h4>
-                                <span>Пользователи</span>
-                            </div>
-                        </div>
-                        <div className={styles.item}>
-                            <img src="" alt=""/>
-                            <div>
-                                <h4>500+</h4>
-                                <span>Загрузок в день</span>
-                            </div>
-                        </div>
-                        <div className={styles.item}>
-                            <img src="" alt=""/>
-                            <div>
-                                <h4>140</h4>
-                                <span>Загрузок в день</span>
+                                <h4>100+</h4>
+                                <span>Активных бета-тестеров</span>
                             </div>
                         </div>
                     </div>
